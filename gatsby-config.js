@@ -35,5 +35,8 @@ module.exports = {
         ignore: [`**/styles.js`],
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-cms`
+    }
   ],
 }
