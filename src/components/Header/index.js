@@ -1,11 +1,6 @@
-import React, { useState } from "react";
-
+import React from "react";
 import GlobalStyle from "../../styles/global";
-
-import { MdMenu } from "react-icons/md";
-
 import { LCHeader } from "./styles";
-
 import { Link } from "gatsby";
 
 export default function Header() {
