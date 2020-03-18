@@ -21,10 +21,5 @@ export const Content = styled.div`
       font-weight: 600;
       text-decoration: none;
     }
-    img {
-      display: block;
-      margin: 0 auto;
-      width: 100%;
-    }
   }
 `;
