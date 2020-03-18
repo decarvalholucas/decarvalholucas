@@ -4582,6 +4582,21 @@ gatsby-page-utils@^0.0.45:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-google-analytics@^2.1.38:
+  version "2.1.38"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.1.38.tgz#37907b2000abf19dcba06da31ccca99abf3fbbc2"
+  integrity sha512-Ce5E1qoD1jQkDcQIm4qPmu0L66ujqwHua0Vy+UC4rUw2GdIn5dunpBklgYaDFF2DG1gDyMwJ4v+XElLaltXcDQ==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+
+gatsby-plugin-nprogress@^2.1.21:
+  version "2.1.21"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.1.21.tgz#3e55eecf18feecfea0d45ff870c60f1fe912e55a"
+  integrity sha512-VQbCNS87fdvrPphY/OOG0l5eEqt+Fyv1rcGYGFdzvAcKzusXUNv1u3daEDqhy3DT8DiZ/lBNidQpf2m9CsFqhQ==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    nprogress "^0.2.0"
+
 gatsby-plugin-offline@^3.0.41:
   version "3.0.41"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.0.41.tgz#e73fc64f3da72e398a89b29b3b8dd6d8c49706ad"
@@ -7122,6 +7137,11 @@ npm-run-path@^4.0.0:
   integrity sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==
   dependencies:
     path-key "^3.0.0"
+
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.2, nth-check@~1.0.1:
   version "1.0.2"
