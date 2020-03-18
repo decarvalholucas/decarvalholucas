@@ -11,6 +11,12 @@ module.exports = {
   pathPrefix: "/blog",
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-161156696-1",
+      },
+    },
+    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: `tomato`,
@@ -27,20 +33,6 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         ignore: [`**/styles.js`],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-161156696-1",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
       },
     },
   ],
