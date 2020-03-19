@@ -36,7 +36,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-netlify-cms`
-    }
+      resolve: `gatsby-plugin-netlify-cms`,
+    },
+    {
+      resolve: "gatsby-plugin-netlify-cache",
+      options: {
+        cachePublic: true,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`
+    },
   ],
 }
