@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
+  html, body, #___gatsby {
+    height: 100%;
+  }
 `
 
 export default GlobalStyle;

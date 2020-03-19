@@ -45,7 +45,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `posts`,
+        path: `${__dirname}/content/blog`,
+      },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+    },
+    `gatsby-plugin-transition-link`,
   ],
 }
