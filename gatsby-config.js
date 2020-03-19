@@ -44,13 +44,13 @@ module.exports = {
         cachePublic: true,
       },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `posts`,
-        path: `${__dirname}/content/blog`,
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: `posts`,
+    //     path: `${__dirname}/content/blog`,
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
     },

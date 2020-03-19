@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 // COMPONENTS
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import PostList from "../components/PostList"
 
 import { Container, Content } from "./styles"
 
@@ -28,7 +27,6 @@ export default () => (
           />
         </p>
       </Content>
-      <PostList />
     </Container>
     <Footer/>
   </>
