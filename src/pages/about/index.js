@@ -2,6 +2,7 @@ import React from "react"
 
 // COMPONENTS
 import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
 import { Content, Container } from "./styles"
 
@@ -46,5 +47,6 @@ export default () => (
         <p>Então, obrigado pela visita, abração e seja bem vindo!</p>
       </Content>
     </Container>
+    <Footer />
   </>
 )

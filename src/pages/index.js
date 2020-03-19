@@ -1,7 +1,9 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 // COMPONENTS
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 import { Container, Content } from "./styles"
 
@@ -26,5 +28,6 @@ export default () => (
         </p>
       </Content>
     </Container>
+    <Footer/>
   </>
 )
