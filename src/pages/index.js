@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 // COMPONENTS
 import Header from "../components/Header"
@@ -7,10 +7,9 @@ import Footer from "../components/Footer"
 
 import { Container, Content } from "./styles"
 
-import { Link } from "gatsby"
-
-export default () => (
+export default ({ data }) => (
   <>
+    {console.log(data)}
     <Header />
     <Container>
       <Content>
@@ -26,8 +25,44 @@ export default () => (
             alt=""
           />
         </p>
+        <h2>Veja no Blog</h2>
+        <div className="postlist">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id}>
+              <Link to={node.fields.slug}>
+                <h3>
+                  {node.frontmatter.title}{" "}
+                  <span>— {node.frontmatter.date}</span>
+                </h3>
+                <p>{node.excerpt}</p>
+              </Link>
+            </div>
+          ))}
+        </div>
       </Content>
     </Container>
-    <Footer/>
+    <Footer />
   </>
 )
+
+export const posts = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+          }
+          fields {
+            slug
+          }
+          excerpt
+          html
+          timeToRead
+        }
+      }
+    }
+  }
+`
