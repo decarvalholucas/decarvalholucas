@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
   height: 100%;
-`;
+`
 
 export const Content = styled.div`
   padding: 10px;
@@ -29,4 +29,40 @@ export const Content = styled.div`
       width: 100%;
     }
   }
-`;
+  .blog-latest-posts {
+    margin: 25px 0;
+    color: #aaa;
+    font-size: 18px;
+    font-weight: 300;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+  .postlist__container {
+    box-shadow: 0 1px 3px rgba(18,18,18,0.12);
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 4px;
+    transition: ease-in 0.02s;
+    &:hover {
+      transform: scale(1.02);
+      border: 1px solid #777;
+    }
+    .post__date {
+      margin-bottom: 15px;
+      color: #aaa;
+      font-size: 12px;
+    }
+    .post__slug {
+      text-decoration: none;
+      .post__title {
+        font-size: 26px;
+        color: #000;
+      }
+      .post__description {
+        margin-top: 10px;
+        color :#666;
+        font-size: 20px;
+      }
+    }
+  }
+`

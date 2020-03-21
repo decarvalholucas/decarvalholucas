@@ -13,32 +13,28 @@ export default ({ data }) => (
     <Header />
     <Container>
       <Content>
-        <h1>Oi!</h1>
+        <h1>Olá, Vietnã!</h1>
         <p>
-          Essa daqui é a home do meu site e não tem nada no momento, mas, se
-          você quiser ler um pouquinho mais sobre mim,{" "}
-          <Link to="/about">clica aqui!</Link>
+          Me chamo Lucas de Carvalho, sou de Nova Friburgo, Rio de Janeiro, e
+          estou montando esse Blog em 2020 com intuito de compartilhar conteúdo
+          sobre desenvolvimento e tecnologia. Se você quiser saber mais sobre
+          mim,
+          <Link to="/about"> clica aqui.</Link>
         </p>
-        <p>
-          <img
-            src="https://media1.tenor.com/images/3715223d881f47daede4eb8b5e566d8e/tenor.gif"
-            alt=""
-          />
-        </p>
-        <h2>Veja no Blog</h2>
-        <div className="postlist">
-          {data.allMarkdownRemark.edges.map(({ node }) => (
+        <h2 className="blog-latest-posts">Últimas do blog</h2>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <article className="postlist__container">
+            <div className="post__date">{node.frontmatter.date}</div>
             <div key={node.id}>
-              <Link to={node.fields.slug}>
-                <h3>
-                  {node.frontmatter.title}{" "}
-                  <span>— {node.frontmatter.date}</span>
+              <Link to={node.fields.slug} className="post__slug">
+                <h3 className="post__title">
+                  {node.frontmatter.title}
                 </h3>
-                <p>{node.excerpt}</p>
+                <p class="post__description">{node.excerpt}</p>
               </Link>
             </div>
-          ))}
-        </div>
+          </article>
+        ))}
       </Content>
     </Container>
     <Footer />
@@ -53,7 +49,7 @@ export const posts = graphql`
           id
           frontmatter {
             title
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+            date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
           }
           fields {
             slug
