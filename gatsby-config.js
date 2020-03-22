@@ -55,5 +55,11 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
     },
     `gatsby-plugin-transition-link`,
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-4971023875906040`,
+      },
+    },
   ],
 }
