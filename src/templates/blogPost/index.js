@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
+import { DiscussionEmbed } from "disqus-react"
 
 import { Container, Content } from "./styles"
 
@@ -11,9 +11,8 @@ import Footer from "../../components/Footer"
 export default ({ data }) => {
   const post = data.markdownRemark
   const disqusConfig = {
-    url: `${post.fields.slug}`,
-    identifier: post.id,
-    title: post.frontmatter.title,
+    shortname: "decarvalholucas",
+    config: { identifier: post.fields.slug, title: post.frontmatter.title },
   }
   return (
     <>
@@ -22,7 +21,7 @@ export default ({ data }) => {
         <Content>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <Disqus config={disqusConfig} />
+          <DiscussionEmbed {...disqusConfig} />
         </Content>
       </Container>
       <Footer />

@@ -60,12 +60,6 @@ module.exports = {
       options: {
         publisherId: `ca-pub-4971023875906040`,
       },
-    },
-    {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `decarvalholucas`
-      }
-    },
+    }
   ],
 }

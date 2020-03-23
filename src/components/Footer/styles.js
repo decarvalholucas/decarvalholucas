@@ -9,7 +9,7 @@ export const LCFooter = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75px;
+  height: 55px;
   .social {
     display: flex;
     justify-content: center;
