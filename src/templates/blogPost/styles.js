@@ -37,4 +37,23 @@ export const Content = styled.div`
       width: 100%;
     }
   }
+  blockquote {
+    margin: 50px auto;
+    font-style: italic;
+    color: ${themeColor.textColor};
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid ${themeColor.cyan};
+    line-height: 1.6;
+    position: relative;
+    background: ${themeColor.currentLine};
+    &::before {
+      font-family: "Arial";
+      content: '"';
+      color: ${themeColor.cyan};
+      font-size: 4em;
+      position: absolute;
+      left: 10px;
+      top: -10px;
+    }
+  }
 `
