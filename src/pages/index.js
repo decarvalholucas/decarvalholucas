@@ -1,11 +1,15 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 // COMPONENTS
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-import { Container, Content } from "./styles"
+import {
+  Container,
+  Content,
+  LinkTranstionDown,
+} from "./styles"
 
 export default ({ data }) => (
   <>
@@ -19,17 +23,17 @@ export default ({ data }) => (
           é o meu Blog e tenho o intuito de compartilhar conteúdo sobre
           programação, tecnologia e e-commerce, ou seja, tudo da área que amo e
           vivo. Se você quiser saber mais sobre mim,
-          <Link to="/about"> clica aqui.</Link>
+          <LinkTranstionDown to="/about"> clica aqui.</LinkTranstionDown>
         </p>
         <h2 className="blog-latest-posts">Últimas do blog</h2>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <article className="postlist__container">
             <div className="post__date">{node.frontmatter.date}</div>
             <div key={node.id}>
-              <Link to={node.fields.slug} className="post__slug">
+              <LinkTranstionDown to={node.fields.slug} className="post__slug">
                 <h3 className="post__title">{node.frontmatter.title}</h3>
-                <p class="post__description">{node.excerpt}</p>
-              </Link>
+                <p class="post__description">{node.frontmatter.description}</p>
+              </LinkTranstionDown>
             </div>
           </article>
         ))}
@@ -48,6 +52,7 @@ export const posts = graphql`
           frontmatter {
             title
             date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+            description
           }
           fields {
             slug

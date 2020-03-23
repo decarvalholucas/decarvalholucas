@@ -1,31 +1,33 @@
 import React from "react"
 import GlobalStyle from "../../styles/global"
-import { LCHeader } from "./styles"
-import { Link } from "gatsby"
+import { LCHeader, LinkTranstionUp, LinkTranstionDown } from "./styles"
+import { TransitionPortal } from "gatsby-plugin-transition-link"
 
 export default function Header() {
   return (
     <>
       <GlobalStyle />
-      <LCHeader>
-        <div className="container">
-          <Link to="/" className="logo">
-            <span>decarvalholucas</span>
-          </Link>
-          <div className="menu">
-            <div>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-              </ul>
+      <TransitionPortal level="top">
+        <LCHeader>
+          <div className="container">
+            <LinkTranstionUp to="/" className="logo">
+              <span>decarvalholucas</span>
+            </LinkTranstionUp>
+            <div className="menu">
+              <div>
+                <ul>
+                  <li>
+                    <LinkTranstionUp to="/">Home</LinkTranstionUp>
+                  </li>
+                  <li>
+                    <LinkTranstionDown to="/about">About</LinkTranstionDown>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </LCHeader>
+        </LCHeader>
+      </TransitionPortal>
     </>
   )
 }

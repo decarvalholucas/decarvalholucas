@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+import themeColor from "../styles/themeColor";
+
 const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
@@ -9,6 +11,11 @@ const GlobalStyle = createGlobalStyle`
   }
   html, body, #___gatsby {
     height: 100%;
+    background: ${themeColor.themeBackgroundColor};
+    color: ${themeColor.textColor};
+  }
+  .gatsby-plugin-transition-link-portal {
+    width: 100%;
   }
 `
 
