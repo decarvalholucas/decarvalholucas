@@ -17,7 +17,7 @@ export default ({ data }) => (
     <Header />
     <Container>
       <Content>
-        <h1>Olá, Vietnã!</h1>
+        <h1>Olá!</h1>
         <p>
           Me chamo Lucas de Carvalho, sou de Nova Friburgo, Rio de Janeiro, esse
           é o meu Blog e tenho o intuito de compartilhar conteúdo sobre

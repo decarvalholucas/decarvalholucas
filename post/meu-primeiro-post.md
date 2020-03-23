@@ -4,7 +4,7 @@ date: "2020-03-22"
 description: "Um pouco da motivação de desenvolvimento do meu blog e como ele foi construido"
 ---
 
-Fala galera, passando aqui pra escrever meu primeiro post nesse blog
+Oi, tudo bem? Passando aqui pra escrever meu primeiro post nesse blog
 que é um sonho meu de muito tempo, finalmente eu tirei ele do papel.
 
 ## Motivação

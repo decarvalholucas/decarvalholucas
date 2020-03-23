@@ -11,7 +11,7 @@ export default () => (
     <Header />
     <Container>
       <Content>
-        <h1>Fala ai!</h1>
+        <h1>Olá!</h1>
         <p>
           Meu nome é Lucas de Carvalho. Trabalho e estudo programação desde
           2014. Sou apaixonado por projetos open source e também por e-commerce.

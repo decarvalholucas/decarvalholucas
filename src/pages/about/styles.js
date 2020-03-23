@@ -5,7 +5,7 @@ import themeColor from "../../styles/themeColor";
 export const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 78px;
+  /* padding-top: 78px; */
 `;
 
 export const Content = styled.div`
