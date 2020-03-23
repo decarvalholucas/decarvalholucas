@@ -41,11 +41,12 @@ export const Content = styled.div`
     margin: 50px auto;
     font-style: italic;
     color: ${themeColor.textColor};
-    padding: 1.2em 30px 1.2em 75px;
+    padding: 10px 55px;
     border-left: 8px solid ${themeColor.cyan};
     line-height: 1.6;
     position: relative;
     background: ${themeColor.currentLine};
+    border-radius: 5px;
     &::before {
       font-family: "Arial";
       content: '"';
@@ -54,6 +55,9 @@ export const Content = styled.div`
       position: absolute;
       left: 10px;
       top: -10px;
+    }
+    p {
+      margin: 0;
     }
   }
 `
