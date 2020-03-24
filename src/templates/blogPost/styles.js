@@ -13,12 +13,24 @@ export const Content = styled.div`
   padding: 10px;
   margin: 10px;
   height: 100%;
+  time {
+    color: #787878;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+  }
   h1 {
     font-size: 24px;
     margin: 0 0 20px 0;
   }
   h2 {
-    margin: 0 0 20px 0;
+    line-height: 35px;
+  }
+  figure {
+    .gatsby-resp-image-figcaption {
+      display: none;
+    }
   }
   p {
     font-size: 18px;
@@ -38,7 +50,7 @@ export const Content = styled.div`
     }
   }
   blockquote {
-    margin: 50px auto;
+    margin: 0 0 20px 0;
     font-style: italic;
     color: ${themeColor.textColor};
     padding: 10px 55px;

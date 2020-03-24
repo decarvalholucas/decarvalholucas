@@ -28,6 +28,37 @@ module.exports = {
         displayName: process.env.NODE_ENV !== "production",
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              showCaptions: true,
+              sizeByPixelDensity: true,
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `posts`,
+        path: `${__dirname}/post`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
@@ -44,22 +75,12 @@ module.exports = {
         cachePublic: true,
       },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `posts`,
-        path: `${__dirname}/post`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-    },
     `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
         publisherId: `ca-pub-2414262469940493`,
       },
-    }
+    },
   ],
 }

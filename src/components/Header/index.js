@@ -1,7 +1,6 @@
 import React from "react"
 import GlobalStyle from "../../styles/global"
 import { LCHeader, LinkTranstionUp, LinkTranstionDown } from "./styles"
-import { TransitionPortal } from "gatsby-plugin-transition-link"
 
 export default function Header() {
   return (

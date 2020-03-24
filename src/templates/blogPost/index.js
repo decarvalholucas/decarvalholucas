@@ -19,6 +19,7 @@ export default ({ data }) => {
       <Header />
       <Container>
         <Content>
+          <time className="postDate">{post.frontmatter.date}</time>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <DiscussionEmbed {...disqusConfig} />
@@ -36,6 +37,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(locale: "pt-br", formatString: "DD MMMM [de] YYYY")
       }
       fields {
         slug
