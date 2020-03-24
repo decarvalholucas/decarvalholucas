@@ -7,9 +7,21 @@
 const siteMetadata = require("./config/metadata")
 
 module.exports = {
-  siteMetadata,
-  pathPrefix: "/blog",
+  siteMetadata: {
+    ...siteMetadata,
+    siteUrl: "https://decarvalholucas.netlify.com"
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://decarvalholucas.netlify.com`,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

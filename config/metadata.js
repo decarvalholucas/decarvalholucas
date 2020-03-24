@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `decarvalholucas`,
-    siteUrl: `https://www.decarvalholucas.com`,
-    description: `Blog de um cara apaixonado por tecnologia!`,
+    titleTemplate: `%s · Um dev apaixonado por tecnologia`,
+    description: `Site pessoal e blog de um desenvolvedor apaixonado por criar soluções e compartilhar suas idéias.`,
     social: [
       {
         name: "github",
