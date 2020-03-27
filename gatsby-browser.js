@@ -1,1 +1,1 @@
-import "prismjs/themes/prism-dracula.css"
+import "./src/styles/prism-dracula.css"
