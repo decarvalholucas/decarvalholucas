@@ -9,7 +9,7 @@ que por sinal está sendo sensacional. Se você está lendo este artigo em uma d
 
 A primeira parte da semana consiste em criar o backend, nele vamos fazer muitas consultas a banco de dados, e só de ler isso já vem o sentimento de preguiça e de complexidade em toda a arquitetura que você vai ter que pensar para fazer isso, não é mesmo?
 
-Digo isso, porque, se pra você é familiar trabalhar com bancos de dados SQL, quando precisamos fazer uma única consulta, faríamos basicamente assim:
+Digo isso, porque, se para você é familiar trabalhar com bancos de dados SQL, quando precisamos fazer uma única consulta, faríamos basicamente assim:
 
 ```SQL
 SELECT first_name,last_name FROM peoples WHERE id = "1"
@@ -17,7 +17,7 @@ SELECT first_name,last_name FROM peoples WHERE id = "1"
 
 Isso sendo apenas uma simples consulta e nem poderia ser utilizado diretamente em nosso código, na nossa aplicação, teríamos que montar uma estrutura por trás do nosso projeto para podermos utilizar códigos SQL e depois, para os códigos conseguirem se comunicar com os bancos de dados, etc... Só de pensar, já cansa, não é mesmo?
 
-Pra isso, temos uma ferramenta muito poderosa que nos ajuda em toda interação que precisamos fazer com nosso banco de dados, o Knex JS.
+para isso, temos uma ferramenta muito poderosa que nos ajuda em toda interação que precisamos fazer com nosso banco de dados, o Knex JS.
 
 ## O que é Knex JS?
 
@@ -37,7 +37,7 @@ Neste exemplo irei utilizar NodeJS, primeiro precisamos configurar o banco de da
 
 Criamos um arquivo chamado **knexfile.js**
 
-Vamos supor que essa aplicação seja apenas para um teste que estamos fazendo, então não vamos configurar a mesma pra produção nem nada, apenas para desenvolvimento. Preenchemos o knexfile.js desta forma:
+Vamos supor que essa aplicação seja apenas para um teste que estamos fazendo, então não vamos configurar a mesma para produção nem nada, apenas para desenvolvimento. Preenchemos o knexfile.js desta forma:
 
 ```javascript
 module.exports = {
@@ -77,8 +77,8 @@ insertUser("Lucas", "de Carvalho Alves");
 
 E pronto, acabamos de criar de uma maneira muito simples, uma inserção de um usuário em nosso banco de dados.
 
-Primeiro chamaos o knex, depois as configurações que fizemos no knexfile, executamos o knex com o arquivo de configurações e por final, criamos uma função de inserir usuário, ela por sinal é uma função assíncrona e utilizamos o connection na tabela usuarios com o método insert, passando os parâmetros vindo da função. Simples, não?
+Primeiro chamamos o knex, depois as configurações que fizemos no knexfile, executamos o knex com o arquivo de configurações e por final, criamos uma função de inserir usuário, ela por sinal é uma função assíncrona e utilizamos o connection na tabela usuarios com o método insert, passando os parâmetros vindo da função. Simples, não?
 
-O melhor disso tudo, usamos desde o princípio JavaScript. Somente isso.
+O melhor disso tudo, utilizamos desde o princípio, JavaScript. Somente isso.
 
-E com isso, da pra fazer um CRUD inteiro, com vários filtros e tipos de consultas. Peço que, se te interessou, [leia a documentação](http://knexjs.org/), use e abuse de estudar, isso é o mais importante de tudo.
+E com isso, da para fazer um CRUD inteiro, com vários filtros e tipos de consultas. Peço que, se te interessou, [leia a documentação](http://knexjs.org/), use e abuse de estudar, isso é o mais importante de tudo.
