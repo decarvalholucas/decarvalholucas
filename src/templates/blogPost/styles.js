@@ -22,10 +22,12 @@ export const Content = styled.div`
   }
   h1 {
     font-size: 24px;
+    line-height: 35px;
     margin: 0 0 20px 0;
   }
   h2 {
     line-height: 35px;
+    margin: 0 0 10px 0;
   }
   figure {
     .gatsby-resp-image-figcaption {
@@ -40,8 +42,6 @@ export const Content = styled.div`
       color: ${themeColor.cyan};
       font-weight: 600;
       text-decoration: none;
-      border-bottom: 2px solid;
-      padding-bottom: 3px;
     }
     img {
       display: block;
@@ -71,5 +71,14 @@ export const Content = styled.div`
     p {
       margin: 0;
     }
+  }
+  .gatsby-highlight-code-line {
+    background-color: #feb;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
   }
 `

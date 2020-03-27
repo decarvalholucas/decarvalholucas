@@ -64,6 +64,7 @@ export const Content = styled.div`
       .post__title {
         font-size: 26px;
         color: ${themeColor.textColor};
+        line-height: 40px;
       }
       .post__description {
         margin-top: 10px;

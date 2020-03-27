@@ -9,7 +9,7 @@ const siteMetadata = require("./config/metadata")
 module.exports = {
   siteMetadata: {
     ...siteMetadata,
-    siteUrl: "https://decarvalholucas.netlify.com"
+    siteUrl: "https://decarvalholucas.netlify.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -54,6 +54,7 @@ module.exports = {
               maxWidth: 590,
             },
           },
+          `gatsby-remark-prismjs`,
         ],
       },
     },
@@ -92,6 +93,39 @@ module.exports = {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
         publisherId: `ca-pub-2414262469940493`,
+      },
+    },
+    {
+      resolve: `gatsby-remark-prismjs`,
+      options: {
+        classPrefix: "language-",
+        inlineCodeMarker: null,
+        aliases: {},
+        showLineNumbers: true,
+        noInlineHighlight: false,
+        languageExtensions: [
+          {
+            language: "superscript",
+            extend: "javascript",
+            definition: {
+              superscript_types: /(SuperType)/,
+            },
+            insertBefore: {
+              function: {
+                superscript_keywords: /(superif|superelse)/,
+              },
+            },
+          },
+        ],
+        prompt: {
+          user: "root",
+          host: "localhost",
+          global: false,
+        },
+        // By default the HTML entities <>&'" are escaped.
+        // Add additional HTML escapes by providing a mapping
+        // of HTML entities and their escape value IE: { '}': '&#123;' }
+        escapeEntities: {},
       },
     },
   ],
