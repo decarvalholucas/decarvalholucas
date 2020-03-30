@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-import favicon from "../../images/public/favicon.ico"
+import favicon from "../../images/site/favicon.ico"
 import GlobalStyle from "../../styles/global"
 import { LCHeader, LinkTranstionUp, LinkTranstionDown } from "./styles"
 
