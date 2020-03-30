@@ -129,5 +129,6 @@ module.exports = {
         escapeEntities: {},
       },
     },
+    `gatsby-plugin-robots-txt`
   ],
 }
