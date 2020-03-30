@@ -24,7 +24,7 @@ export const Content = styled.div`
     line-height: 30px;
     margin: 0 0 20px 0;
     a {
-      color: ${themeColor.cyan};
+      color: ${themeColor.red};
       font-weight: 600;
       text-decoration: none;
       border-bottom: 2px solid;

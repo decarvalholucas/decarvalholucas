@@ -3,17 +3,23 @@ import styled from 'styled-components';
 import themeColor from "../../styles/themeColor";
 
 export const Container = styled.div`
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
-  /* padding-top: 78px; */
 `;
 
 export const Content = styled.div`
   padding: 10px;
   margin: 10px;
+  text-align: center;
   h1 {
     font-size: 24px;
     margin: 0 0 20px 0;
+    line-height: 40px;
+  }
+  h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    line-height: 40px;
   }
   p {
     font-size: 18px;

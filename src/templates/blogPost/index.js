@@ -20,12 +20,10 @@ export default ({ data }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          {post.frontmatter.title} - {data.allSite.nodes[0].siteMetadata.siteMetadata.title}
+          {post.frontmatter.title} -{" "}
+          {data.allSite.nodes[0].siteMetadata.siteMetadata.title}
         </title>
-        <meta
-          name="description"
-          content={post.frontmatter.description}
-        />
+        <meta name="description" content={post.frontmatter.description} />
       </Helmet>
       <Header />
       <Container>

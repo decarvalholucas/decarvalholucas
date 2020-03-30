@@ -39,7 +39,7 @@ export const Content = styled.div`
     line-height: 30px;
     margin: 0 0 20px 0;
     a {
-      color: ${themeColor.cyan};
+      color: ${themeColor.red};
       font-weight: 600;
       text-decoration: none;
     }
@@ -54,7 +54,7 @@ export const Content = styled.div`
     font-style: italic;
     color: ${themeColor.textColor};
     padding: 10px 55px;
-    border-left: 8px solid ${themeColor.cyan};
+    border-left: 8px solid ${themeColor.red};
     line-height: 1.6;
     position: relative;
     background: ${themeColor.currentLine};
@@ -62,7 +62,7 @@ export const Content = styled.div`
     &::before {
       font-family: "Arial";
       content: '"';
-      color: ${themeColor.cyan};
+      color: ${themeColor.red};
       font-size: 4em;
       position: absolute;
       left: 10px;
@@ -80,5 +80,8 @@ export const Content = styled.div`
     padding-right: 1em;
     padding-left: 0.75em;
     border-left: 0.25em solid #f99;
+  }
+  #thread__container {
+    background: red;
   }
 `

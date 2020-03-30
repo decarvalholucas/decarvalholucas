@@ -17,6 +17,27 @@ const GlobalStyle = createGlobalStyle`
   .gatsby-plugin-transition-link-portal {
     width: 100%;
   }
+  .footer_copy {
+    text-align: center;
+    font-size: 11px;
+    margin: 80px 0 20px 0;
+    padding: 0 10px;
+    a {
+      text-decoration: none;
+      color: ${themeColor.red};
+    }
+  }
+  .comment__header {
+    .post-byline {
+      .publisher-anchor-color {
+        a {
+          color: #FFF !important;
+          font-size: 32px !important;
+        }
+      }
+    }
+  }
+  
 `
 
 export default GlobalStyle

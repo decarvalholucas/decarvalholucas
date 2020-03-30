@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 import themeColor from "../../styles/themeColor";
 
 export const LCFooter = styled.footer`
@@ -39,3 +41,11 @@ export const LCFooter = styled.footer`
     }
   }
 `
+export const LinkTranstionDown = styled(AniLink).attrs(() => {
+  return {
+    cover: "true",
+    bg: themeColor.themeBackgroundColor,
+    direction: "down",
+    duration: "0.5",
+  }
+})``
