@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 // COMPONENTS
 import Header from "../../components/Header"
@@ -6,8 +8,16 @@ import Footer from "../../components/Footer"
 
 import { Content, Container } from "./styles"
 
-export default () => (
+export default ({ data }) => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Sobre - {data.allSite.nodes[0].siteMetadata.siteMetadata.title}</title>
+      <meta
+        name="description"
+        content={data.allSite.nodes[0].siteMetadata.siteMetadata.description}
+      />
+    </Helmet>
     <Header />
     <Container>
       <Content>
@@ -50,3 +60,18 @@ export default () => (
     <Footer />
   </>
 )
+
+export const posts = graphql`
+  query {
+    allSite {
+      nodes {
+        siteMetadata {
+          siteMetadata {
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`

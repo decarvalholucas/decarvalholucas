@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `decarvalholucas`,
-    titleTemplate: `%s · Um dev apaixonado por tecnologia`,
+    title: `Lucas de Carvalho`,
     description: `Site pessoal e blog de um desenvolvedor apaixonado por criar soluções e compartilhar suas idéias.`,
     social: [
       {

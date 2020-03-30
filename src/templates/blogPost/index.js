@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { DiscussionEmbed } from "disqus-react"
+import Helmet from "react-helmet"
 
 import { Container, Content } from "./styles"
 
@@ -16,6 +17,16 @@ export default ({ data }) => {
   }
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          {post.frontmatter.title} - {data.allSite.nodes[0].siteMetadata.siteMetadata.title}
+        </title>
+        <meta
+          name="description"
+          content={post.frontmatter.description}
+        />
+      </Helmet>
       <Header />
       <Container>
         <Content>
@@ -38,9 +49,19 @@ export const query = graphql`
       frontmatter {
         title
         date(locale: "pt-br", formatString: "DD MMMM [de] YYYY")
+        description
       }
       fields {
         slug
+      }
+    }
+    allSite {
+      nodes {
+        siteMetadata {
+          siteMetadata {
+            title
+          }
+        }
       }
     }
   }

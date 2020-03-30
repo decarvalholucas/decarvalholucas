@@ -1,18 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 // COMPONENTS
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-import {
-  Container,
-  Content,
-  LinkTranstionDown,
-} from "./styles"
+import { Container, Content, LinkTranstionDown } from "./styles"
 
 export default ({ data }) => (
   <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>{data.allSite.nodes[0].siteMetadata.siteMetadata.title}</title>
+      <meta name="description" content={data.allSite.nodes[0].siteMetadata.siteMetadata.description} />
+    </Helmet>
     {console.log(data)}
     <Header />
     <Container>
@@ -45,6 +47,16 @@ export default ({ data }) => (
 
 export const posts = graphql`
   query {
+    allSite {
+      nodes {
+        siteMetadata {
+          siteMetadata {
+            title
+            description
+          }
+        }
+      }
+    }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
