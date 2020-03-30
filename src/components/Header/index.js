@@ -1,10 +1,16 @@
 import React from "react"
+import Helmet from "react-helmet"
+
+import favicon from "../../images/public/favicon.ico"
 import GlobalStyle from "../../styles/global"
 import { LCHeader, LinkTranstionUp, LinkTranstionDown } from "./styles"
 
 export default function Header() {
   return (
     <>
+      <Helmet>
+        <link rel="icon" href={favicon} />
+      </Helmet>
       <GlobalStyle />
       <LCHeader>
         <div className="container">
