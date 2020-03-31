@@ -11,7 +11,6 @@ import { Container, Content, LinkTranstionDown } from "./styles"
 export default ({ data }) => (
   <>
     <SEO title="Home"/>
-    {console.log(data)}
     <Header />
     <Container>
       <Content>
