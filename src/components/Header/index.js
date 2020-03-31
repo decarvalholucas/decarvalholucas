@@ -8,7 +8,12 @@ export default function Header() {
   return (
     <>
       <Helmet>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />´
+        <script
+          data-ad-client="ca-pub-2414262469940493"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
       </Helmet>
       <GlobalStyle />
       <LCHeader>

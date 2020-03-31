@@ -91,12 +91,6 @@ module.exports = {
     },
     `gatsby-plugin-transition-link`,
     {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-2414262469940493`,
-      },
-    },
-    {
       resolve: `gatsby-remark-prismjs`,
       options: {
         classPrefix: "language-",
