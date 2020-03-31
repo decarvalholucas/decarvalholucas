@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { DiscussionEmbed } from "disqus-react"
-import Helmet from "react-helmet"
 
 import { Container, Content } from "./styles"
 
 // COMPONENTS
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import SEO from "../../components/Seo"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -17,14 +17,7 @@ export default ({ data }) => {
   }
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          {post.frontmatter.title} -{" "}
-          {data.allSite.nodes[0].siteMetadata.siteMetadata.title}
-        </title>
-        <meta name="description" content={post.frontmatter.description} />
-      </Helmet>
+      <SEO title={post.frontmatter.title} description={post.frontmatter.description} />
       <Header />
       <Container>
         <Content>

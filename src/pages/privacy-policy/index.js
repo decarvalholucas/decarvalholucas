@@ -1,26 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Helmet from "react-helmet"
 
 // COMPONENTS
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import SEO from "../../components/Seo"
 
 import { Content, Container } from "./styles"
 
 export default ({ data }) => (
   <>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>
-        Política de Privacidade -{" "}
-        {data.allSite.nodes[0].siteMetadata.siteMetadata.title}
-      </title>
-      <meta
-        name="description"
-        content={data.allSite.nodes[0].siteMetadata.siteMetadata.description}
-      />
-    </Helmet>
+    <SEO title="Política de Privacidade"/>
     <Header />
     <Container>
       <Content>
