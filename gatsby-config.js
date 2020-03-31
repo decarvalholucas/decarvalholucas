@@ -114,6 +114,12 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-robots-txt`
+    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-2414262469940493`,
+      },
+    },
   ],
 }
