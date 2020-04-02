@@ -9,7 +9,7 @@ const siteMetadata = require("./config/metadata")
 module.exports = {
   siteMetadata: {
     ...siteMetadata,
-    siteUrl: "https://decarvalholucas.netlify.com",
+    siteUrl: "https://www.decarvalholucas.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://decarvalholucas.netlify.com`,
+        siteUrl: `https://www.decarvalholucas.com`,
       },
     },
     {
