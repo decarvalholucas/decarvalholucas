@@ -1,39 +1,23 @@
 ---
-title: "Bem vindo(a) ao meu blog"
-date: "2020-03-22"
-description: "Um pouco da motivação de desenvolvimento do meu blog e como ele foi construido"
+title: "Começando do zero"
+date: "2020-05-23"
+description: "Refatoração de todos os posts do blog :)"
 ---
 
-Oi, tudo bem? Passando aqui pra escrever meu primeiro post nesse meu novo projeto
-que é um sonho de muito tempo, que finalmente eu tirei ele do papel.
+Oi, tudo bem? Lucas aqui, estou criando esse post com intúito de explicar, primeiramente, o motivo da exclusão
+dos outros posts e também o motivo de estar escrevendo este.
 
-## Motivação
+## Começando do 0
 
-Graças a um vídeo do Felipe Deschamps, que como ele mesmo diz, "foi um soco no meu 
-estômago", e realmente foi, mesmo ainda não estando 100% (e creio que nunca vai ficar), ele está no ar e você está lendo isso aqui agora.
+No início, criei o blog com intúito de: "vai ser apenas mais um projeto pessoal pra eu por no meu currículo de dev", e a experiência foi muito boa,
+aprendi várias tecnologias, conceitos e também a escrever melhor rs, mas hoje estou olhando o blog outros olhos, eu comecei a gostar dele de verdade, quero criar conteúdo de qualidade, quero futuramente, gravar vídeos pro YouTube pra de alguma forma, seja em artigos escritos ou em vídeos, ajudar as pessoas e mostrar o quanto nossa área é importante pra humanidade em geral.
 
-Vou deixar o vídeo abaixo de onde foi o início de tudo.
+Só que as coisas não estavam indo da forma que eu esperava e deu uma desanimada, e isso não foi bom. Os posts ficaram na minha cabeça como "obrigação", ou seja, eu tinha em mente que toda semana eu teria que inventar alguma coisa pra postar aqui, e não, não estou dizendo que estou com preguiça de ficar postando, apenas não vou ficar inventando conteúdo que não seja útil pra comunidade somente pra fazer volume no blog. Quero algo de qualidade.
 
-> No momento em que um site seu, que você, criou com suas próprias mãos, gerar 1 centavo de receita, a química inteira do seu cérebro vai mudar
+## E como vai ser agora?
 
-[Clique aqui pra assistir o vídeo](https://youtu.be/H4CCPaYLTWg?t=420)
+Decidi fazer diferente, vou continuar com o blog, artigos vão ser publicados, mas não como uma obrigação, eu não tenho um blog de notícias tipo o G1 ou Olhar Digital, não quero um assunto tirado do Google apenas pra fazer volume, artigos vão ser elaborados conforme eu achar necesário e o principal, com qualidade, todos vão passar por uma revisão, tanto de escrita quanto técnica (quando estivermos falando de tecnologias e assuntos técnicos).
 
-Desde 2014 indo pra 2015 eu estudo programação, comecei com o Curso em Vídeo
-do Gustavo Guanabara, que no caso foi o curso de HTML5 e CSS3 e ali me despertou essa paixão desse mundo incrível que é o da programação.
+Passaremos também por várias modificações de usabilidade, UI/UX, cores, fontes, tudo, pra termos algo realmente de qualidade!
 
-A partir dai fiz vários cursos, vários treinamentos, fui em vários eventos,
-mas sempre que tinha que criar algum projeto, eu fazia sempre o projeto dos cursos, que não tem nada de errado, pelo contrário, são muito bons, mas eu sentia
-que faltava algo, e descobri isso com o Filipe, faltava algo que era meu, do meu
-próprio interesse, que me despertasse paixão, e por isso estou aqui hoje. 
-
-## Tecnologia usada
-
-Depois de vários meses estudando com o pessoal da Rocketseat, eu me apaixonei pela stack Node, React e React Native, e desde então venho descobrindo coisas
-maravilhosas. Foi em uma das lives da Rocket que descobri o Gatsby.
-
-O Gatsby é um framework baseado em React que é usado pra devs criarem sites rápidos,
-de alta velocidade e performance. E você pode ver isso usando meu site, da uma navegada nele e veja o que to falando.
-
-Como ele é baseado em React e eu já venho de uma grande experiência com a Rocket, está sendo incrível a experiência de utilizar essa ferramenta.
-
-Por fim é isso, agradeço pela leitura e fico muito feliz de você ter chego até aqui, muito obrigado!
+Por enquanto é isso, agradeço sua leitura breve estamos de volta, valeeu!
