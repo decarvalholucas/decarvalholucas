@@ -30,4 +30,4 @@ Peter disse que pelo Twitter conseguiu rápidas respostas do Google mas que pelo
 Peter com mais de 20 anos de experiência na internet e também como programador,
 caiu em uma das mais conhecidas técnicas hackers que é a engenharia social.
 
-Isso fica de alerta para todos so meus amigos desenvolvedores e demais pessoas da área, o código pode estar seguro, mas o ser humano é falho!
+Isso fica de alerta para todos os meus amigos desenvolvedores e demais pessoas da área, o código pode estar seguro, mas o ser humano é falho!
