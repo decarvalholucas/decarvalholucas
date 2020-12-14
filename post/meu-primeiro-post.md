@@ -1,6 +1,6 @@
 ---
 title: "Canal Ei Nerd com mais de 10 milhões de inscritos é hackeado"
-date: "2020-05-23"
+date: "2020-12-13"
 description: "Canal e contas associadas de Peter Jordan são alvos de hackers."
 ---
 
