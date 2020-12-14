@@ -10,6 +10,8 @@ Neste domingo, os canais "Ei Nerd", "Acredite ou Não", "eu e a patroa" e outros
 
 # Como Peter foi Hackeado?
 
+[![Vídeo Peter Jordan explicando como foi hackeado](https://i.imgur.com/UaZEqOJ.png)](https://www.youtube.com/watch?v=od5qpOvjTLk "Vídeo Peter Jordan explicando como foi hackeado")
+
 Segundo Peter, a sua equipe comercial recebeu um e-mail para uma campanha do jogo
 Cyber Punk.
 
