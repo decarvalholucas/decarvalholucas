@@ -1,5 +1,5 @@
 ---
-title: "Canal Ei Nerd de Peter Jordam é hackeado"
+title: "Canal Ei Nerd de Peter Jordan é hackeado"
 date: "2020-12-13"
 description: "Canal e contas associadas de Peter Jordan são alvos de hackers."
 ---
