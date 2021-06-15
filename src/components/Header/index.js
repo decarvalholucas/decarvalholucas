@@ -9,6 +9,10 @@ export default function Header() {
     <>
       <Helmet>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="facebook-domain-verification"
+          content="580f1gzsvwxx3bjz1gt53q5q289057"
+        />
       </Helmet>
       <GlobalStyle />
       <LCHeader>
